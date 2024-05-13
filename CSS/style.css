@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+    }
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: let(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/img1.jpg);
+    background-size: cover;
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    z-index: -1;
+}
+
+
+/*Nav*/
+.zocalo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* ajusta según el tamaño del zócalo */
+    background-color: white;
+    z-index: -1; /* enviar el zócalo detrás de los otros elementos */
+}
+
+.nav {
+    position: relative; /* asegura que los elementos de navegación estén por encima del zócalo */
+    z-index: 1; /* coloca los elementos de navegación encima del zócalo */
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #000; /* ajusta el color del texto para que sea visible sobre el fondo blanco */
+    text-decoration: none;
+}
+.nav__link{
+    display:flex;
+    font-size: 17px;
+    justify-content: flex-end;
+    margin-top: 55px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center; /* centrar verticalmente */
+}
+.nav__logo img {
+    width: 120px;
+    height: 115px;
+}
+
+
+
+
+/*Hero Container*/
+
+.hero__container{
+    max-width: 800px;
+    display: grid;
+    --padding-container: 0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.cta{
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/*About*/
+
+.about{
+    text-align: center;
+}
+
+.subtitle{
+    color: let(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about__paragraph{
+    line-height: 1.7;
+    margin-bottom: 55px;
+}
+
+.about__main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+.about__icons{
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: auto;
+}
+
+.about__icon{
+    width: 40px;
+}
+.space {
+    margin-bottom: 20px; 
+}
+
+/*Knowledge - QUIERO DONAR*/
+/*.knowledge{
+    background-color: #e5e5f7;
+    background-image:  radial-gradient(#444cf7 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, #e5e5f7 0.5px);
+    background-size: 20px 20px;
+    background-position: 0 0,10px 10px;
+    overflow: hidden;
+
+}
+
+.knowledge__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+}
+
+.knowledge__picture{
+    max-width: 500px;
+}
+
+.knowledge__paragraph{
+    font-size: 20px;
+    line-height: 1,7;
+    margin-bottom: 20px;
+}
+
+.knowledge__img{
+    margin-left: 450px;
+   width: 150px;
+    display: block;
+}*/
+
+/*Silder*/
+
+.slider{
+    background-color: #e5e5f7;
+}
+
+.slider__container{
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+}
+
+.slider__body{
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column: 2/3;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+}
+.slider__body--show{
+    pointer-events: unset;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+}
+
+.slider__img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 50% 30%;
+}
+
+.slider__text{
+    max-width: 700px;
+}
+
+.slider__course{
+    background-color: royalblue;
+    color: #fff;
+    display: inline-block;
+    padding: 5px;
+}
+.slider__arrow{
+    width: 90%;
+    cursor: pointer;
+}
+
+.zocalo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* ajusta según el tamaño del zócalo */
+    background-color: white;
+    z-index: -1; /* enviar el zócalo detrás de los otros elementos */
+}
+
+.nav {
+    position: relative; /* asegura que los elementos de navegación estén por encima del zócalo */
+    z-index: 1; /* coloca los elementos de navegación encima del zócalo */
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #000; /* ajusta el color del texto para que sea visible sobre el fondo blanco */
+    text-decoration: none;
+}
+.nav__link{
+    display:flex;
+    font-size: 17px;
+    justify-content: flex-end;
+    margin-top: 55px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center; /* centrar verticalmente */
+}
+.nav__logo img {
+    width: 120px;
+    height: 115px;
+}
+
+
