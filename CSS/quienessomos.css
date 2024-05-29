@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+    }
+
+body{
+    font-family: "Poppins", sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: let(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #fff;
+}
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/quienessomoshtml.jpg);
+    background-size: cover;
+    
+    z-index: -1;
+}
+
+
+/*Nav*/
+.zocalo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; 
+    background-color: white;
+    z-index: -1; 
+}
+
+.nav {
+    position: relative; 
+    z-index: 1; 
+}
+
+.nav__items {
+    list-style: none;
+}
+
+.nav__links {
+    color: #000; 
+    text-decoration: none;
+}
+.nav__link{
+    display:flex;
+    font-size: 17px;
+    justify-content: flex-end;
+    margin-top: 55px;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    display: flex;
+    align-items: center; 
+}
+.nav__logo img {
+    width: 120px;
+    height: 115px;
+}
+
+.boton-donar {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    margin-top: -10px;
+    
+}
+
+.boton-donar:hover {
+    background-color: #0056b3;
+}
+
+
+
+/*Hero Container*/
+
+.hero__container{
+    max-width: 800px;
+    display: grid;
+    --padding-container: 0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+}
+
+
+.cta{
+    display: inline-block;
+    background-color: #2091F9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+}
+
+/*Titulo*/
+.titulo_QS{
+    color: #000;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: -70px;
+    margin-bottom: 80px;
+
+}
+
+
+/*Parrafo*/
+.paragraph_QS {
+    color: #333; 
+    font-size: 1rem; 
+    line-height: 1.6; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    text-align: justify; 
+    padding: 0 20px; 
+    margin-bottom: 45px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Footer*/
+.pie-pagina{
+    width: 100%;
+    background-color: #0a141D;
+}
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+}
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pie-pagina .grupo-1 .box figure img{
+    width: 250px;
+}
+
+.pie-pagina .grupo-1 .box h2{
+    color:#fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.pie-pagina .grupo-1 .box p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    
+}
+
+.pie-pagina .grupo-2{
+    color: #fff;
+    text-align: center;
+}
+
+@media screen and (max-widt:800px) {
+    .pie-pagina .grupo1{
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;}
+}
