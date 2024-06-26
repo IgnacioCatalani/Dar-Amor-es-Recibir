@@ -104,8 +104,22 @@ body{
 .boton-donar:hover {
     background-color: #0056b3;
 }
+@media screen and (max-width: 1024px) {
+    .nav__link {
+        display: none; /* Oculta los enlaces en tablet */
+    }
 
+    .nav__logo {
+        justify-content: center; /* Centra el logo en tablet */
+        width: 100%; /* Ajusta el ancho del logo al 100% del contenedor */
+        padding: 0 20px; /* Agrega un poco de padding al logo si es necesario */
+    }
 
+    .nav__logo img {
+        width: 120px; /* Ajusta el tamaño del logo para tablet */
+        height: auto; /* Mantiene la proporción del logo */
+    }
+}
 
 /*Hero Container*/
 
@@ -344,10 +358,11 @@ body{
     text-align: center;
 }
 
-@media screen and (max-widt:800px) {
-    .pie-pagina .grupo1{
-    width: 90%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 30px;
-    padding: 35px 0px;}
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1 {
+        width: 90%;
+        grid-template-columns: 1fr;
+        grid-gap: 30px;
+        padding: 35px 0;
+    }
 }
