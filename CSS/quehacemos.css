@@ -27,7 +27,7 @@ body{
     grid-template-rows: 100px 1fr;
     color: #fff;
 }
-.hero::before{
+.hero-quehacemos::before{
     content: "";
     position: absolute;
     top: 0;

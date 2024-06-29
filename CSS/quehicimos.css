@@ -27,16 +27,16 @@ body{
     grid-template-rows: 100px 1fr;
     color: #fff;
 }
-.hero::before{
+.hero-quehicimos::before{
     content: "";
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 80%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/quienessomoshtml.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/Quehicimosfondo.jpg);
     background-size: cover;
-    
+    background-position: center;
     z-index: -1;
 }
 
@@ -171,10 +171,41 @@ body{
     max-width: 800px; 
     text-align: justify; 
     padding: 0 20px; 
-    margin-bottom: 45px;
+    margin-bottom: 15px;
 }
 
 
+.achievements {
+    text-align: center; 
+}
+
+.achievements__content {
+    max-width: 800px; 
+    margin: auto;
+}
+
+.achievements ul {
+    text-align: left; 
+    padding-left: 20; 
+    padding-bottom: 35px;
+    list-style-type: disc; 
+}
+
+
+.achievements__images {
+    display: flex; /* Usa flexbox para alinear las imágenes */
+    justify-content: space-around; /* Distribuye las imágenes con espacio alrededor */
+    margin-top: 20px; /* Espacio superior entre el texto y las imágenes */
+    max-height: 400px; /* Altura máxima del contenedor de imágenes */
+    overflow: hidden; /* Oculta el contenido que exceda la altura máxima */
+}
+
+.achievements__images img {
+    max-width: 30%; /* Ancho máximo de las imágenes */
+    height: auto; /* Altura automática para mantener la proporción */
+    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    margin-bottom: 25px;
+}
 
 
 
