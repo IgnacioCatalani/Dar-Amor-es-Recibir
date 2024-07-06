@@ -33,7 +33,7 @@ body{
     left: 0;
     width: 100%;
     height: 80%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/Quienessomosfondo.JPG);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/Quienessomosfondotiny.JPG);
     background-size: cover;
     background-position-y: 40%; 
     z-index: -1;
