@@ -16,7 +16,6 @@ body{
     overflow: hidden;
     padding: let(--padding-container);
 }
-
 .hero{
     width: 100%;
     height: 100vh;
@@ -39,10 +38,6 @@ body{
     background-position-y: 40%; 
     z-index: -1;
 }
-
-
-
-/*Nav*/
 .zocalo {
     position: absolute;
     top: 0;
@@ -52,16 +47,13 @@ body{
     background-color: white;
     z-index: -1; 
 }
-
 .nav {
     position: relative; 
     z-index: 1; 
 }
-
 .nav__items {
     list-style: none;
 }
-
 .nav__links {
     color: #000; 
     text-decoration: none;
@@ -77,7 +69,6 @@ body{
     grid-auto-columns: max-content;
     gap: 2em;
 }
-
 .nav__logo {
     position: absolute;
     top: 0;
@@ -90,7 +81,6 @@ body{
     width: 120px;
     height: 115px;
 }
-
 .boton-donar {
     background-color: #007bff;
     color: white;
@@ -101,30 +91,23 @@ body{
     margin-top: -10px;
     
 }
-
 .boton-donar:hover {
     background-color: #0056b3;
 }
 @media screen and (max-width: 1024px) {
     .nav__link {
-        display: none; /* Oculta los enlaces en tablet */
+        display: none; 
     }
-
     .nav__logo {
-        justify-content: center; /* Centra el logo en tablet */
-        width: 100%; /* Ajusta el ancho del logo al 100% del contenedor */
-        padding: 0 20px; /* Agrega un poco de padding al logo si es necesario */
+        justify-content: center; 
+        width: 100%; 
+        padding: 0 20px; 
     }
-
     .nav__logo img {
-        width: 120px; /* Ajusta el tamaño del logo para tablet */
-        height: auto; /* Mantiene la proporción del logo */
+        width: 120px; 
+        height: auto; 
     }
 }
-
-
-/*Hero Container*/
-
 .hero__container{
     max-width: 800px;
     display: grid;
@@ -135,12 +118,9 @@ body{
     padding-bottom: 100px;
     text-align: center;
 }
-
 .hero__title{
     font-size: 3rem;
 }
-
-
 .cta{
     display: inline-block;
     background-color: #2091F9;
@@ -150,8 +130,6 @@ body{
     padding: 13px 30px;
     border-radius: 32px;
 }
-
-/*Titulo*/
 .titulo_QS{
     color: #000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -161,9 +139,6 @@ body{
     margin-bottom: 80px;
 
 }
-
-
-/*Parrafo*/
 .paragraph_QS {
     color: #333; 
     font-size: 1rem; 

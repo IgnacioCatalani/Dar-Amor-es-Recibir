@@ -8,7 +8,6 @@
 body{
     font-family: "Poppins", sans-serif;
 }
-
 .container{
     width: 90%;
     max-width: 1200px;
@@ -16,7 +15,6 @@ body{
     overflow: hidden;
     padding: let(--padding-container);
 }
-
 .hero{
     width: 100%;
     height: 100vh;
@@ -39,9 +37,6 @@ body{
     background-position: center;
     z-index: -1;
 }
-
-
-/*Nav*/
 .zocalo {
     position: absolute;
     top: 0;
@@ -51,16 +46,13 @@ body{
     background-color: white;
     z-index: -1; 
 }
-
 .nav {
     position: relative; 
     z-index: 1; 
 }
-
 .nav__items {
     list-style: none;
 }
-
 .nav__links {
     color: #000; 
     text-decoration: none;
@@ -76,7 +68,6 @@ body{
     grid-auto-columns: max-content;
     gap: 2em;
 }
-
 .nav__logo {
     position: absolute;
     top: 0;
@@ -107,23 +98,20 @@ body{
 
 @media screen and (max-width: 1024px) {
     .nav__link {
-        display: none; /* Oculta los enlaces en tablet */
+        display: none; 
     }
 
     .nav__logo {
-        justify-content: center; /* Centra el logo en tablet */
-        width: 100%; /* Ajusta el ancho del logo al 100% del contenedor */
-        padding: 0 20px; /* Agrega un poco de padding al logo si es necesario */
+        justify-content: center; 
+        width: 100%; 
+        padding: 0 20px; 
     }
 
     .nav__logo img {
-        width: 120px; /* Ajusta el tamaño del logo para tablet */
-        height: auto; /* Mantiene la proporción del logo */
+        width: 120px; 
+        height: auto; 
     }
 }
-
-/*Hero Container*/
-
 .hero__container{
     max-width: 800px;
     display: grid;
@@ -138,8 +126,6 @@ body{
 .hero__title{
     font-size: 3rem;
 }
-
-
 .cta{
     display: inline-block;
     background-color: #2091F9;
@@ -149,8 +135,6 @@ body{
     padding: 13px 30px;
     border-radius: 32px;
 }
-
-/*Titulo*/
 .titulo_QS{
     color: #000;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -160,9 +144,6 @@ body{
     margin-bottom: 80px;
 
 }
-
-
-/*Parrafo*/
 .paragraph_QS {
     color: #333; 
     font-size: 1rem; 
@@ -173,37 +154,30 @@ body{
     padding: 0 20px; 
     margin-bottom: 15px;
 }
-
-
 .achievements {
     text-align: center; 
 }
-
 .achievements__content {
     max-width: 800px; 
     margin: auto;
 }
-
 .achievements ul {
     text-align: left; 
     padding-left: 20; 
     padding-bottom: 35px;
     list-style-type: disc; 
 }
-
-
 .achievements__images {
-    display: flex; /* Usa flexbox para alinear las imágenes */
-    justify-content: space-around; /* Distribuye las imágenes con espacio alrededor */
-    margin-top: 20px; /* Espacio superior entre el texto y las imágenes */
-    max-height: 400px; /* Altura máxima del contenedor de imágenes */
-    overflow: hidden; /* Oculta el contenido que exceda la altura máxima */
+    display: flex; 
+    justify-content: space-around;
+    margin-top: 20px; 
+    max-height: 400px; 
+    overflow: hidden; 
 }
-
 .achievements__images img {
-    max-width: 30%; /* Ancho máximo de las imágenes */
-    height: auto; /* Altura automática para mantener la proporción */
-    border-radius: 8px; /* Bordes redondeados para las imágenes */
+    max-width: 30%; 
+    height: auto; 
+    border-radius: 8px; 
     margin-bottom: 25px;
 }
 
