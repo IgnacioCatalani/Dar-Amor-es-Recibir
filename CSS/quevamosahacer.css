@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
-
+@font-face {
+    font-family: 'Linotte';
+    src: url(/fonts/Linotte\ Bold.otf);
+}
 :root{
     --padding-container: 100px 0;
     --color-title: #001A49;
@@ -32,7 +35,7 @@ body{
     left: 0;
     width: 100%;
     height: 80%;
-    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/Quevamosahacerfondotiny.jpg);
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(/img/DAR\ Web_QuévamosAHacer.png);
     background-size: cover;
     background-position: center;
     
@@ -124,6 +127,7 @@ body{
     text-align: center;
 }
 .hero__title{
+    font-family: 'Linotte';
     font-size: 3rem;
 }
 .cta{
